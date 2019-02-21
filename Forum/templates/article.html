@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/article/" method="POST">
+    {% csrf_token %}
+    <label for="">title</label><input type="text"  name="title"> <br>
+    <br>
+    <label for="">内容</label><textarea name="content" id="" cols="30" rows="10"></textarea>
+    <br>
+    <button class="btn btn-primary pull-right" type="submit">发帖</button>
+</form>
+
+</body>
+</html>
